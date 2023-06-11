@@ -1,0 +1,100 @@
+.header {
+    display: flex;
+    padding: 30px 50px;
+    justify-content:center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    align-items: center;
+  }
+  
+  .header__left {
+    display: flex;
+    flex: 1;
+    padding-left: 30px;
+  }
+  .header__logo > h1 > img {
+    width: 200px;
+  }
+  .header__right {
+    display: flex;
+    padding: 0 30px;
+    flex: 2;
+  }
+  .header__right > button {
+    padding: 0px 20px;
+    cursor: pointer;
+    background: #dc3545;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+  }
+  .header__link {
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+  }
+  .header__link :hover{
+    font-weight: bold;
+    color: rgb(186, 65, 63);
+  }
+  .header__mobile__button {
+    display: flex;
+    color: #b6b1ae;
+    cursor: pointer;
+    display: none;
+  }
+  .header__mobile__button .MuiSvgIcon-root{
+    border: 1px solid #b6b1ae;
+    padding: 3px 7px;
+    border-radius: 5px;
+  }
+  .header__link :target{
+    color: #dc3545;
+  }
+  @media screen and (max-width:720px) {
+    .header{
+      display: flex;
+      flex-direction: column;
+    }
+    .header__right {
+      display: none;
+      border-top: 1px solid white;
+    } 
+    .header__left{
+      align-items: center;
+      display: flex;
+      justify-content: space-evenly;
+    }
+    
+    .header__mobile__button { 
+      display: block; 
+    } 
+  
+    .header__mobile__button .MuiSvgIcon-root {
+      font-size: xx-large;
+    } 
+    .header__link{
+      display: block;
+      text-align: center;
+      width: 100%;
+    }
+    .header_button {
+      padding: 10px 25px;
+      cursor: pointer;
+      background: #dc3545;
+      border: none;
+      border-radius: 4px;
+      color: white;
+      font-weight: bold;
+      margin-left: 25px;
+    }
+    .header__logo{
+      margin-right: 170px;
+    }
+    
+  }
+  @media screen and (max-width:420px){
+    .header__left h1 {
+      font-size: x-large;
+    }
+  }

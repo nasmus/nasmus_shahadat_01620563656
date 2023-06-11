@@ -1,0 +1,114 @@
+.footer{
+    background: #0F0D32;
+    padding: 2rem 3.5rem;
+}
+.footer_icon {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.footer_icon > a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    margin: 0px 4px;
+    align-items: center;
+    box-sizing: border-box;
+}
+.footer_icon > a :hover{
+    color: #8c94b8;
+}
+.footer_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+.footer_content_left{
+    width: 33%;
+}
+.footer_content_left > p {
+    color: #8c94b8;
+}
+.footer_content_left > img {
+    width: 200px;
+}
+
+.footer_content_middle {
+    width: 33%;
+    text-align: center;
+}
+.footer_content_middle > h4{
+    color: #d5d5d5;
+    line-height: 4;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.footer_content_middle > ul {
+    align-items: center;
+    cursor: pointer;
+    font-family: sans-serif;
+    color: #8c94b8;
+    list-style: none;
+    padding: 7px;
+    
+}
+.footer_content_middle > ul > li{
+    padding: 7px;
+}
+.footer_content_middle > ul :hover {
+    color: #fff;
+}
+.footer_content_right {
+    width: 33%;
+    text-align:right;
+}
+.footer_content_right > h4{
+    color: #d5d5d5;
+    line-height: 4;
+    font-size: 1.5rem;
+    font-weight: 500;
+}   
+.footer_content_right > ul > li {
+    cursor: pointer;
+    font-family: sans-serif;
+    color: #8c94b8;
+    list-style: none;
+    padding: 7px;
+}
+.footer_content_right > ul :hover {
+    color: #fff;
+}
+.divider {
+    border: 1px solid #8c94b8;
+    margin: 0.5rem 0rem;
+}
+.footer_buttom {
+    display: flex;
+    justify-content: space-between;
+    font-size: small;
+}
+.footer_buttom_left {
+    color: #fff;
+}
+.footer_buttom_right > a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 7px;
+    cursor: pointer;
+}
+.footer_icon .MuiSvgIcon-root{
+    border: 1px solid #8c94b8;
+    border-radius: 5px;
+    padding: 0px 6px;
+}
+@media screen and (max-width:780px){
+    .footer_content{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer_buttom{
+        display: flex;
+        flex-direction: column;
+    }
+}
